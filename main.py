@@ -17,7 +17,7 @@ town_rename = {
 }
 
 async def main():
-    browser = await uc.start()
+    browser = await uc.start(sandbox=False)
     page = await browser.get("https://mcrecords.co.middlesex.nj.us/publicsearch1/")
 
     await page.wait()
@@ -73,4 +73,3 @@ if __name__ == "__main__":
     addresses["Town"] = addresses["Town"].replace(town_rename)
     addresses["full"] = addresses["Legal"] + " " + addresses["Town"]
     print(addresses["full"])
-
