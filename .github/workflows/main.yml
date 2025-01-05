@@ -21,8 +21,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: execute py script # run main.py
-        run: python main.py
+      - name: Run headless test in python
+        uses: coactions/setup-xvfb@v1
+        with:
+          run: python main.py
+          working-directory: ./ #optional
+          options: #optional
 
       - name: Keepalive Workflow
         uses: gautamkrishnar/keepalive-workflow@1.1.0
