@@ -24,9 +24,9 @@ jobs:
       - name: Run headless test in python
         uses: coactions/setup-xvfb@v1
         with:
-          run: python main.py
+          run: python camoufoxtry.py
           working-directory: ./ #optional
-          options: #optional
+          # options: #optional
 
       - name: Keepalive Workflow
         uses: gautamkrishnar/keepalive-workflow@1.1.0
