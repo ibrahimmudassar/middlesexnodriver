@@ -3,4 +3,4 @@ beautifulsoup4==4.12.3
 camoufox==0.4.9
 gspread==3.7.0
 pandas
-protobuf==5.29.2
+protobuf==5.29.5
